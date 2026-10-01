@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Cecep Azhar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9fafb;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .sidebar {
+            text-align: center;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #f3f4f6;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            text-align: left;
+            margin-top: 30px;
+        }
+        .contact-info h3 {
+            font-size: 1.1rem;
+            color: #111827;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+        }
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: #4b5563;
+        }
+        .main-content h1 {
+            margin: 0 0 5px 0;
+            color: #111827;
+            font-size: 2.5rem;
+        }
+        .main-content h2 {
+            margin: 0 0 25px 0;
+            color: #6b7280;
+            font-weight: 400;
+            font-size: 1.25rem;
+        }
+        .section-title {
+            color: #111827;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-top: 35px;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .item-title {
+            font-weight: 600;
+            color: #111827;
+            margin: 0;
+        }
+        .item-date {
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+        .item-subtitle {
+            font-size: 0.95rem;
+            font-style: italic;
+            color: #4b5563;
+            margin: 0 0 8px 0;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            list-style: none;
+        }
+        .skills-list li {
+            background-color: #f3f4f6;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #374151;
+            font-weight: 500;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <img src="profile.jpg" alt="Cecep Azhar" class="profile-img">
+        
+        <div class="contact-info">
+            <h3>Kontak</h3>
+            <p>📧 cecep.azhtech@gmail.com</p>
+            <p>💻 github.com/cecep-azhar</p>
+            <p>📍 Indonesia</p>
+            
+            <h3>Keahlian</h3>
+            <ul class="skills-list" style="margin-top: 15px;">
+                <li>Go / Echo</li>
+                <li>Rust / Tauri</li>
+                <li>PostgreSQL</li>
+                <li>Linux / Fedora</li>
+                <li>Tailscale / Podman</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Cecep Saeful Azhar Hidayat, ST</h1>
+        <h2>Software Engineer / Developer</h2>
+
+        <p>Software Engineer dengan fokus pada ekosistem eksekusi tinggi dan sistem persisten. Terbiasa mengelola arsitektur monorepo, pengembangan aplikasi desktop (Tauri/Wails), integrasi pipeline pembayaran, serta deployment tersentralisasi menggunakan Docker dan Coolify.</p>
+
+        <h3 class="section-title">Pengalaman Profesi</h3>
+        
+        <div class="experience-item">
+            <div class="item-header">
+                <h4 class="item-title">CEO / Lead Developer</h4>
+                <span class="item-date">Sekarang</span>
+            </div>
+            <p class="item-subtitle">Fathforce</p>
+            <p>Mengembangkan dan memelihara lini produk utama: Sistem FathStore (Monorepo core, webstore, POS berbahasa Go) dan CATerm (Aplikasi desktop terminal enkripsi AES-256 menggunakan Rust dan Tauri untuk distribusi Snap/Flatpak).</p>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <h4 class="item-title">Freelance Engineer</h4>
+                <span class="item-date">2023 - Sekarang</span>
+            </div>
+            <p class="item-subtitle">PBS & Gerlink Medika</p>
+            <p>Mengelola distribusi server, pembaruan aplikasi statis (PBS Padel), serta infrastruktur mesh network menggunakan Tailscale lintas perangkat (Windows/Linux VPS). Mendeploy arsitektur basis data berbasis Podman.</p>
+        </div>
+
+        <h3 class="section-title">Pendidikan</h3>
+        
+        <div class="education-item">
+            <div class="item-header">
+                <h4 class="item-title">Sarjana Teknik (S.T)</h4>
+            </div>
+            <p class="item-subtitle">Teknik Informatika</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
